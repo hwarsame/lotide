@@ -9,16 +9,15 @@ const assertEqual = function(actual, expected) {
 assertEqual("Lighthouse Labs", "Bootcamp");
 assertEqual(1, 1);
 
-const eqArrays = function(bigH, tanker) {
-  for (let i = 0; i < bigH.length; i++) {
-    if (bigH[i] === tanker[i]) {
-      return true;
+const eqArrays = function(array1, array2) {
+  for (let i = 0; i < array1.length; i++) {
+    if (array1[i] !== array2[i]) {
+      return false;
     }
   }
-  return false;
+  return true;
 
 };
-
 
 
 
