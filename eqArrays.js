@@ -1,4 +1,4 @@
-const assertEqual = function (actual, expected) {
+const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`✅✅✅  Assertion passed ${actual}  ===  ${expected}`);
   } else {
@@ -9,9 +9,21 @@ const assertEqual = function (actual, expected) {
 assertEqual("Lighthouse Labs", "Bootcamp");
 assertEqual(1, 1);
 
-const tail = function (list) {
-  return list.slice(1)
-}
-const words = ["Yo Yo", "Lighthouse", "Labs"];
-tail(words); // no need to capture the return value since we are not checking it
-assertEqual(words.length, 3);
+const eqArrays = function(bigH, tanker) {
+  for (let i = 0; i < bigH.length; i++) {
+    if (bigH[i] === tanker[i]) {
+      return true;
+    }
+  }
+  return false;
+
+};
+
+
+
+
+assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
+
+
+
+
