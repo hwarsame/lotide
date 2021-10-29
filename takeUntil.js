@@ -20,20 +20,18 @@ const eqArrays = function(array1, array2) {
 
 
 
-const takeUntil = function (array, callback) {
+const takeUntil = function(array, callback) {
   const results = [];
   for (let i of array) {
     if (callback(i) === false) {
       results.push(i);
-    }
-    else
-   {
-      return results
+    } else {
+      return results;
     }
 
 
   }
-}
+};
 
 
 const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
