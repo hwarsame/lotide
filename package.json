@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@1bigh/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "Lighthouse Project #1: 'Lotide Library' ",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,10 +13,13 @@
     "type": "git",
     "url": "git+https://github.com/1BigH/lotide.git"
   },
-  "author": "",
+  "author": "Hamza Warsame",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/1BigH/lotide/issues"
   },
-  "homepage": "https://github.com/1BigH/lotide#readme"
+  "homepage": "https://github.com/1BigH/lotide#readme",
+  "dependencies": {
+    "my-package": "0.0.0"
+  }
 }
